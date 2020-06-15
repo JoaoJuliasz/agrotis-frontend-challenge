@@ -19,7 +19,7 @@ const EditDocuments = ({ document, updateDocument }) => {
         <>
             <div>
                 <BoardHeader path='updateDocuments'
-                  handleFunction={handleClick} element={{ name, description }} />
+                    handleFunction={handleClick} element={{ name, description }} />
                 <Board documents={<InputDocuments name={name}
                     description={description}
                     handleChange={handleChange} />}

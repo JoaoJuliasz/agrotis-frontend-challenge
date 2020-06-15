@@ -1,7 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { ToastMessageContainer, ToastMessageText, ToastMessageClose } from './ToastMessage.styles'
-const ToastMessage = ({ toastMessage, onClick }) => {
+const ToastMessage = ({ onClick }) => {
+    const toastMessage = useSelector(state => state.toastMessage)
     return (
         <div>
             {
@@ -16,11 +17,4 @@ const ToastMessage = ({ toastMessage, onClick }) => {
         </div>
     );
 };
-
-const mapStateToProps = state => {
-    return {
-        toastMessage: state.toastMessage,
-    }
-}
-
-export default connect(mapStateToProps)(ToastMessage);
+export default ToastMessage;
