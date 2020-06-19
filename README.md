@@ -2,7 +2,7 @@
 
 Challenge link - https://github.com/agrotis-io/desafio-front 
 
-This application consists in a documents crud
+This application consists in a documents crud. <br>
 For the solution, the used stacks are: 
 - React;
 - React-Hooks;
